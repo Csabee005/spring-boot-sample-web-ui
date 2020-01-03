@@ -9,11 +9,9 @@
    </appender>
 
    <appender name="FILE" class="ch.qos.logback.core.FileAppender">
-    <file>testFile.log</file>
-    <append>true</append>
-    <immediateFlush>true</immediateFlush>
+    <file>log-${bySecond}.txt</file>
     <encoder>
-      <pattern>%-4relative [%thread] %-5level %logger{35} - %msg%n</pattern>
+      <pattern>%logger{35} - %msg%n</pattern>
     </encoder>
   </appender>
         
