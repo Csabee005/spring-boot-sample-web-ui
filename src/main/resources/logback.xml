@@ -9,7 +9,7 @@
    </appender>
 
    <appender name="FILE" class="ch.qos.logback.core.FileAppender">
-    <file>log-${bySecond}.txt</file>
+    <file>basic_debug_log.txt</file>
     <encoder>
       <pattern>%logger{35} - %msg%n</pattern>
     </encoder>
